@@ -73,6 +73,19 @@
     transform: translateY(0);
 }
 
+.upper-header{
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    padding: 8px 10px;
+    border-bottom: 1px solid #1cb2ff;
+}
+
+.upper-header p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .header-inner{
     position: relative;
     display: flex;
@@ -84,6 +97,10 @@
 .left-header a img{
     width: 80px;
     height: 80px;
+}
+
+.left-header p{
+    font-size: 22px;
 }
 
 #mobile-menu > ul{
@@ -301,14 +318,19 @@ video{
 .about-inner{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
     gap: 50px;
+}
+
+.left-about{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
 }
 
 .left-about img{
     width: 100%;
     border-radius: 3px;
-    /* height: 400px; */
+    height: 250px;
 }
 
 .right-about{
@@ -403,44 +425,41 @@ video{
 
 /* industry container css start */
 
+.industries-inner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 40px;
+}
+
 .industry-item{
     background-color: #f7f8f9;
     border-bottom: 1px solid #438eff;
-    padding: 30px 20px;
+    padding: 15px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.industries__container .swiper{
-    padding: 70px 0px;
-}
-
 .industry-item img{
-    width: 250px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .industry-item h2{
-    font-size: 38px;
+    text-align: center;
+    font-size: 26px;
 }
 
-.industries__container .swiper-pagination-bullet{
-    width: 10px;
-    height: 10px;
-}
-
-.industries__container .swiper-pagination-bullet-active{
-    width: 12px;
-    height: 12px;
-}
 
 /* industry container css end */
 
 /* clients container css start  */
 
 .clients__container marquee img{
-    margin: 0px 20px;
+    margin: 0px 40px;
     height: 100px;
 }
 
@@ -480,9 +499,6 @@ video{
     box-shadow: 0 2px 0 0 #1cb2ff;
 }
 
-.wc-item.quality-p .wc-content{
-    padding: 20px 30px 30px 30px;
-}
 
 .wc-content p{
     opacity: .8;
@@ -812,7 +828,7 @@ video{
         display: none;
     }
 
-    .about-inner, .services-inner, .why-choose-items-inner, .company-facts__container .counters {
+    .about-inner, .services-inner, .why-choose-items-inner, .company-facts__container .counters, .industries-inner {
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
     }
