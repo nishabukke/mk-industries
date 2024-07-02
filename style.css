@@ -636,6 +636,13 @@ video{
     background-color: #0047bb;
     padding: 10px;
 }
+
+.mobile-menu-container .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* mobile menu css */
 
 .canva_expander {
