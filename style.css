@@ -100,7 +100,8 @@
 }
 
 .left-header p{
-    font-size: 22px;
+    font-size: 32px;
+    line-height: 1.0;
 }
 
 #mobile-menu > ul{
@@ -641,6 +642,10 @@ video{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.mobile-menu-container .logo p{
+    line-height: 1;
 }
 
 /* mobile menu css */

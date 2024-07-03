@@ -77,8 +77,8 @@ $( document ).ready(function() {
    // Close out sub menu
    $('.sub__close').click(function(e) {
     e.preventDefault();
-    
-    $(this).parent().parent().removeClass('is-active');
+    $( ".sub__close" ).hide();
+    // $(this).parent().parent().removeClass('is-active');
   });
   
   // Trigger sub menu
