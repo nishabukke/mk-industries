@@ -346,12 +346,12 @@
                 <img src="images/client7.png" alt="">
                 <img src="images/client8.png" alt="">
                 <img src="images/client9.png" alt="">
-                <img src="images/client10.png" alt="">
+                <img src="images/client10.jpeg" alt="">
                 <img src="images/client11.png" alt="">
                 <img src="images/client12.png" alt="">
                 <img src="images/client13.png" alt="">
                 <img src="images/client14.png" alt="">
-                <img src="images/client15.png" alt="">
+                <img src="images/client15.jpeg" alt="">
                 <img src="images/client16.png" alt="">
             </marquee>
         </section>
@@ -467,7 +467,6 @@ var counted = 0;
 $(window).scroll(function() {
 
   var count = $('#counter');
-  console.log(count);
   if(count.length){
   var oTop = count.offset().top - window.innerHeight;
   if (counted == 0 && $(window).scrollTop() > oTop) {
@@ -489,7 +488,6 @@ $(window).scroll(function() {
           },
           complete: function() {
             $this.text(this.countNum + `+`);
-            //alert('finished');
           }
 
         });
