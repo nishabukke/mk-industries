@@ -75,7 +75,7 @@
     background: rgba(0, 71, 187, .9);
     color: #fff;
     left: 0;
-    position: fixed;
+    position: sticky;
     right: 0;
     top: 0;
     transition-duration: .5s;
